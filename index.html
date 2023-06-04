@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMenzies</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <button id="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open Sidebar"><i class="fas fa-bars"></i></button>
+  </header>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <main>
+      <section id="header">
+        <div class="header-content">
+          <h1>
+            <span class="animated-text">Hi, I'm Josh</span><br>
+            <span class="animated-text">Your Friendly Neighborhood</span><br>
+            <span class="animated-text">Software Engineer 🗽</span>
+          </h1>
+          <p>Welcome to the source!</p>
+          <div class="arrow-down"></div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>   
+        <div class="project-item">
+          <div class="project-description">
+            <h3>Predicting AirBnB Prices in NYC</h3>
+            <p>This project focuses on utilizing machine learning techniques to predict the prices of AirBnB listings in New York City (NYC). By employing Python, TensorFlow, and a 5-layer MLP neural network, we analyze a historical dataset obtained from Kaggle. The goal is to accurately forecast AirBnB prices and compare the performance of our MLP neural network with a linear regression model using scikit-learn. The project provides valuable insights for individuals interested in renting or investing in AirBnB properties in NYC.</p>
+            <a href="https://docs.google.com/presentation/d/1m9CMy_Jatb3Bsn_HJRl2r6ku1tavCgCLmVvFhcdAZDU/edit?usp=sharing" target="_blank" class="project-link">View Project</a>
+          </div>
+        <div class="project-item">
+          <div class="project-description">
+            <h3>Best Places to Invest in CT</h3>
+            <p>In this project, our team aimed to identify the best places to live in Connecticut (CT). We utilized the CART algorithm and an MLP neural network to evaluate town data, including demographic information, economic indicators, and quality-of-life metrics. The CART algorithm achieved a 97% performance score, outperforming the MLP neural network, which scored 91%. Based on our analysis, we identified four top-ranking towns in CT that offer attractive investment opportunities. This project provides valuable insights for individuals seeking the best places to live and invest in Connecticut.</p>
+            <a href="https://docs.google.com/presentation/d/1IwMJbWDZiZK77j7hgGafRuBHG0BrF2rB2ALBImG_2bI/edit#slide=id.g19cf904a237_0_45" target="_blank" class="project-link">View Project</a>
+          </div>
+          <div class="project-item">
+            <div class="project-description">
+              <h3>Git-Hub Projects</h3>
+              <p>"Dive into my Git-Hub where I showcase a range of projects I've undertaken in a full-stack environment. These projects, shaped by my academic and personal pursuits, cover a wide span of tech stacks that include not just React.js, but also technologies integral to an entry-level software engineer. You'll find me dabbling with Python, JavaScript, Node.js, and Express.js, as well as mastering the art of manipulating databases with SQL and MongoDB. I've also explored front-end frameworks like Bootstrap and Material-UI for seamless user experiences. Each project is a testament to my continuous learning and passion for software development."</p>
+              <a href="https://github.com/jmenzies722" target="_blank" class="project-link">View Projects</a>
+            </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>As a Computer Engineering graduate, my passion lies in creating innovative web and mobile applications using AI and Machine Learning. With a combination of creativity and problem-solving skills, my goal is to develop impactful tech solutions. I strive to become a valuable team member in the tech industry, leveraging my expertise in AI and Machine Learning. I am committed to lifelong learning and staying updated with the rapid changes in this fast-paced field. Other than Software I have a STRONG passion for the game of Basketball !!</p>
+        <img id="myImage" src="grad_3.png" alt="Your Name">
+        </a>
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>Having freshly graduated, I bring a strong skill set gained from my studies and projects. I'm equipped with a solid foundation in programming languages including Python, JavaScript, TypeScript, C++, and Java, and have hands-on experience with web development tools like HTML, CSS, and React.
+
+          I've also had the opportunity to work with data-centric technologies such as TensorFlow, Pandas, SQL, and MongoDB, and I'm well-versed in Git and GitHub for version control. Furthermore, I've delved into AI subjects, gaining an understanding of neural networks and deep learning.
+          
+          My resume provides an in-depth view of my educational background, project experiences, and the skills I've honed. I warmly invite you to peruse it!</p>
+        <a href="https://drive.google.com/file/d/1z1GVd8nGiSABXwdJGFK_qNlLIJkUQf64/view?usp=drive_link" target="_blank" class="resume-link">View My Resume</a>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>University of Hartford</h3>
+          <p class="education-details">
+            <span class="education-degree">BS in Computer Engineering</span> (2019-2023)
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>University of Hartford</h3>
+          <p class="education-details">
+            <span class="education-degree">Minor in Computer Science</span> (2019-2023)
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>NSBE National Society Black Engineers</h3>
+          <p class="education-details">
+            Joined in 2019 and actively participated until 2023
+          </p>
+          <a href="https://drive.google.com/file/d/1z1GVd8nGiSABXwdJGFK_qNlLIJkUQf64/view?usp=drive_link" target="_blank" class="resume-link">View My Linkedin</a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+          <a href="mailto:your-email@example.com" target="_blank" class="fas fa-envelope"></a>
+          <a href="https://github.com/jmenzies722" target="_blank" class="fab fa-github"></a>
+          <a href="https://www.linkedin.com/in/josh-m123456/" target="_blank" class="fab fa-linkedin"></a>
+          <a href="https://twitter.com/your-twitter-account" target="_blank" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/your-instagram-account" target="_blank" class="fab fa-instagram"></a>
+          <button id="back-to-top" class="arrow-up"></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Joshua Menzies. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

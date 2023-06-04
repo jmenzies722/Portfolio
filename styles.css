@@ -1,0 +1,497 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #000000;
+  filter: grayscale(100%);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Fade-in transition effect */
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1s ease-in forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 150px;
+  text-align: center;
+  animation: fade-in-animation 1s ease-in;
+}
+
+#sidebar-toggle {
+  color: #000000;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* Rotate Effect */
+#sidebar-toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar ul {
+  padding: 20px;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+}
+
+
+#sidebar ul li a {
+  font-size: 18px;
+  transition: color 0.3s;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  color: #000000;
+  background-color: #ffffff;
+ 
+}
+
+#sidebar ul li a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Content */
+#content {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+/* Sections */
+section {
+  text-align: center;
+  padding: 120px 0;
+  filter: grayscale(100%);
+  animation: fade-in-animation 1s ease-in;
+}
+
+/* Header Section */
+#header {
+  background-color: #fdfdfd;
+  position: relative;
+  text-align: center;
+  padding: 120px 0;
+}
+
+#header h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+#header h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+#header h1 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+#header h1 span:hover::after {
+  background-color: #000000;
+}
+
+
+#header .animated-text {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+
+#header .arrow-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  animation: arrow-bounce-animation 1s infinite;
+  cursor: pointer;
+}
+@keyframes arrow-bounce-animation {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  50% {
+    transform: translate(-50%, -30%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust arrow position on smaller screens */
+  #header .arrow-down {
+    bottom: 60px;
+  }
+}
+
+/* Projects Section */
+#projects {
+  background-color: #ffffff;
+  padding: 120px 0;
+  color: rgb(0, 0, 0);
+}
+
+#projects h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+.project-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  transition: transform 0.3s;
+}
+
+.project-link:hover {
+  background-color: #aeaeae;
+  color: #000000;
+  transform: scale(1.1);
+  animation: pulse 0.5s infinite;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Other styles for responsiveness */
+  
+  .project-item {
+    text-align: center;
+  }
+}
+
+
+/* About Section */
+#about {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#about h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+#about p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+/* Education Section */
+#education {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+#education h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.education-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.education-details {
+  font-size: 16px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#contact h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.contact-icons {
+  margin-bottom: 20px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.contact-icons a {
+  color: #000000;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.contact-icons a:hover {
+  transform: rotate(360deg) scale(1.2);
+  animation: pulse 0.5s infinite;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Hover Underline Effect */
+section:hover h2 {
+  position: relative;
+}
+
+section:hover h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  animation: underline-animation 0.3s ease-in;
+}
+
+@keyframes underline-animation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  animation: arrow-bounce-animation 1s infinite;
+  cursor: pointer;
+  display: none;
+}
+
+#back-to-top:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+
+
+#back-to-top:hover:before {
+  border-color: #fff;
+}
+
+
+/* Rotate Effect */
+#sidebar-toggle:hover {
+  transform: rotate(90deg);
+}
+
+.arrow-down:hover {
+  transform: rotate(90deg);
+}
+
+#back-to-top:hover {
+  transform: rotate(90deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#back-to-top.show {
+  display: block;
+  animation: bounce 2s infinite;
+}
+
+#resume {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+}
+
+#resume h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+#resume p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  animation: fade-in-animation 1s ease-in;
+}
+
+.resume-link {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  transition: transform 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #aeaeae;
+  color: #000000;
+  transform: scale(1.1);
+  animation: pulse 0.5s infinite;
+}
+
+/* Adding smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adding some more hover effects */
+.project-link:focus,
+.resume-link:focus,
+.contact-icons a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Adding a small transition to all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Adding a hover effect to the 'back-to-top' button */
+#back-to-top:hover {
+  background-color: #000;
+}
+#back-to-top:hover:before {
+  border-color: #fff;
+}
+
+/* Adding some more media queries for better responsiveness */
+@media screen and (max-width: 480px) {
+  #header h1, #projects h2, #about h2, #education h2, #contact h2, #resume h2 {
+    font-size: 40px;
+  }
+}
+
+
+
+#myImage {
+  width: 150px; /* or whatever size you want */
+  height: 150px; /* or whatever size you want */
+  border-radius: 50%; /* this will make the image circular */
+  object-fit: cover; /* this will make sure the image is scaled properly */
+}
+
