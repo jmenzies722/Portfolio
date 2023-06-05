@@ -122,7 +122,8 @@ section {
   background-color: #fdfdfd;
   position: relative;
   text-align: center;
-  padding: 120px 0;
+  padding: 150px 0;
+  animation: fade-in-animation 1s ease-in;
 }
 
 #header h1 {
@@ -245,6 +246,7 @@ section {
 #about {
   background-color: #ffffff;
   color: #000000;
+  padding: 120px 0;
 }
 
 #about h2 {
@@ -263,6 +265,7 @@ section {
 #education {
   background-color: #ffffff;
   color: #000000;
+  padding: 120px 0;
 
 }
 
@@ -291,6 +294,7 @@ section {
 #contact {
   background-color: #ffffff;
   color: #000000;
+  padding: 120px 0;
 }
 
 #contact h2 {
