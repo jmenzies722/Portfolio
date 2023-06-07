@@ -2,7 +2,7 @@ JMenzies Portfolio Website 🌟
 
 Welcome to my personal portfolio website! 🚀
 
-🔗 Website Link: Visit Portfolio
+🔗 Website Link: https://jmenzies722.github.io/Portfolio/
 
 Explore my coding projects, skills, and experiences:
 
