@@ -20,6 +20,6 @@ Explore my coding projects, skills, and experiences:
 
 🌐 How to Use: Visit the Portfolio and navigate through the sections to learn more about me.
 
-📄 License: This project is licensed under the MIT License.
+📄 License: This project is licensed under ME.
 
 Thank you for visiting my portfolio website! Feel free to reach out to me through the provided contact channels. Goodluck! 😄🚀
